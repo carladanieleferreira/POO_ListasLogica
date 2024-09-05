@@ -19,12 +19,17 @@ contrário ele retornar um erro e solicitar que o usuário digite um número vá
         System.out.print("Digite o número pra iniciar o cronômetro (entre 1 e 59): ");
         numero= leia.nextInt();
 
-        if((numero>= 60) ||(numero <=0) ){
+        if((numero>= 60) ||(numero < 0) ){
         System.out.print("Erro. Digite um número válido  ");
         }else{
-        for (int i =numero ; i > 0 ; i--) {
-        System.out.println(i);
-    }
+            for (int i =numero ; i >= 0 ; i--) {
+            System.out.println(i);
+            try{
+                Thread.sleep(1000);
+            }catch(InterruptedException e){
+                e.printStackTrace();
+            }
+        }
         System.out.println("Programa encerrado");
         }
         
