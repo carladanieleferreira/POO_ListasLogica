@@ -3,32 +3,33 @@ package com.poo.logica.logica.lista3;
 import java.util.Scanner;
 
 public class Exercicio6 {
-/* piramide  */
+    public static void resolucao(){
+        
+        Scanner leia = new Scanner(System.in);
 
+        /*6) Escreva um programa que seja capaz de 
+        desenhar uma pirâmide de asteriscos.
+        O usuário deverá informar quantos andares 
+        ele deseja que a pirâmide tenha.*/
 
-public static void resolucao(){
-    Scanner leia = new Scanner(System.in);
-
-    int quantidade_andares;
-    System.out.println("Informe o número de andares da pirâmide: ");
-    quantidade_andares = leia.nextInt();
-
-    for (int i = 1 ; i <= quantidade_andares; i++) {
-        for (int j = 0; j < quantidade_andares - i; j++) {
-            System.out.println(" ");
-            for (int j2 = 0; j2 < (2 * i - 1); j2++) {
-                System.out.println("*"); 
+        int quantidade_andares;
+        System.out.println("Informe o número de andares da pirâmide: ");
+        quantidade_andares = leia.nextInt();
+        
+        System.out.print("\n");
+        
+        for (int i = 0; i < quantidade_andares; i++) {
+            
+            for (int j = quantidade_andares - i - 1; j > 0; j--) {
+                System.out.print(" ");
             }
-            System.out.println(); 
-        }
-        leia.close();        
+            
+            //asteriscos
+            for (int k = 0; k < (2 * i + 1); k++) {
+                System.out.print("*");
+            }
+            System.out.println();
+        }  
+        leia.close();
     }
-
-
-
-
-
-    leia.close();
-}
-
 }

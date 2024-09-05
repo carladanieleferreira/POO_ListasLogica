@@ -6,7 +6,7 @@ public class Exercicio7 {
 
     public static void resolucao(){
     
-/* Escreva um programa que seja capaz de desejar um retangulo */
+/* Escreva um programa que seja capaz de desenhar um retangulo */
 
         int largura;
         int altura;
