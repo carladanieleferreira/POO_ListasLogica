@@ -35,7 +35,7 @@ public static void resolucao(){
             System.out.println("Não desista ... tá morno, quase lá...  Tente novamente: ");
         }else if(tentativa > (certo + 10 ) || tentativa < (certo - 10 )){
             System.out.println("Não foi dessa vez ainda ... porém tá quente ...  Tente novamente: ");
-        }else if (tentativa >= (certo + 1 ) || tentativa <= (certo - 1 )){
+        }else if (tentativa > (certo + 1 ) || tentativa <= (certo - 1 )){
             System.out.println("Te contar um segredo: você está fervendo... Tente novamente: ");
         }else if (tentativa == certo ){
             acertou = true ;
