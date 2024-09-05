@@ -10,6 +10,6 @@ public class Lista3Application {
 	public static void main(String[] args) {
 		SpringApplication.run(Lista3Application.class, args);
 
-		Exercicio6.resolucao();
+		Exercicio5.resolucao();
 	}
 }
